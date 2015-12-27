@@ -1,8 +1,8 @@
-(function(){
+!function(){
 	function el(element){
 		if(!element){element = document}
-		return element; 
-	}
+		return element 
+	};
 
 	function addLister(domnode,eventType,handler){
 		if(el().all){
@@ -10,9 +10,9 @@
 		}else{
 			domnode.addEventListener(eventType,handler,false)
 		}
-	}
+	};
 
-	addLister(input_left,"click",scroll_left)
-	addLister(input_right,"click",scroll_left)
+	addLister(your_node,Event[0],function_name);
 
-})(); // use of this ! replace ()
+	// var Event = ["click","drag","moveover","moveout","keyup",.....]
+}();
