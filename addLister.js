@@ -1,4 +1,4 @@
-!function(){
+!function(w){
 
 	/**********调用**********/
 
@@ -17,7 +17,7 @@
 
 	/*********调用***********/
 
-	addLister(your_node,Event[0],function_name);
+	w.addLister = addLister(your_node,Event[0],function_name);
 
 	// var Event = ["click","drag","moveover","moveout","keyup",.....]
-}();
+}(window);
